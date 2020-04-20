@@ -5,6 +5,11 @@ import { Component } from '@angular/core';
   templateUrl: './assignment1.component.html',
   styleUrls: ['./assignment1.component.css']
 })
+
 export class Assignment1Component {
+values = "";
+onKeydown(event : any){
+  this.values = event.target.value;
+  }
 
 }

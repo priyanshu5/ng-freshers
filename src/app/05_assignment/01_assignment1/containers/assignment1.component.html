@@ -8,6 +8,7 @@
     <li class="list-group-item">Display the result on the page via string interpolation</li>
   </ul>
   <div class="container your-code">
-    <h6>Remove this &lt;h3&gt; and create your HTML here</h6>
+    <!-- <h6>Remove this &lt;h3&gt; and create your HTML here</h6> -->
+    <input type="text" placeholder="Enter text here" [(value)] = "values" (keydown) = "onKeydown($event)"/> <strong>Result- {{values}}</strong>
   </div>
 </div>
