@@ -8,8 +8,8 @@ import { Component } from '@angular/core';
 
 export class Assignment1Component {
 values = "";
-onKeydown(event : any){
-  this.values = event.target.value;
-  }
+onKey(value : string){
+  this.values = value;
 
+  }
 }

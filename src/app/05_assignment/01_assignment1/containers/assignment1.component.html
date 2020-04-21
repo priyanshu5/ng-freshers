@@ -9,6 +9,7 @@
   </ul>
   <div class="container your-code">
     <!-- <h6>Remove this &lt;h3&gt; and create your HTML here</h6> -->
-    <input type="text" placeholder="Enter text here" [(value)] = "values" (keydown) = "onKeydown($event)"/> <strong>Result- {{values}}</strong>
+    <!-- <input type="text" placeholder="Enter text here" [(value)] = "values" (keydown) = "onKeydown($event)"/> <strong>Result- {{values}}</strong> -->
+    <input #inputvalue (input)="onKey(inputvalue.value)" placeholder="Enter text here"><strong>Result- {{values}}</strong>
   </div>
 </div>
